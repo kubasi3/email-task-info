@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Informace o soukromé aplikaci Jakuba Semeniuka pro rozpoznání osobních úkolů z pošty a jejich evidenci.">
+  <meta name="theme-color" content="#16634e">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <!-- Google Search Console: insert the real google-site-verification meta tag here when supplied by the owner. -->
+  <title>Evidence úkolů – osobní pošta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přejít na obsah</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Evidence úkolů – osobní pošta, úvod">
+        <span class="brand-mark" aria-hidden="true">Ú</span>
+        <span><span class="brand-name">Evidence úkolů</span><span class="brand-subtitle">osobní pošta</span></span>
+      </a>
+      <nav aria-label="Hlavní navigace">
+        <a href="index.html" aria-current="page">Úvod</a>
+        <a href="privacy.html">Soukromí</a>
+        <a href="terms.html">Podmínky použití</a>
+      </nav>
+    </div>
+  </header>
+  <main id="obsah" class="wrap" tabindex="-1">
+    <div class="hero">
+      <p class="eyebrow">Informace o osobní aplikaci</p>
+      <h1>Evidence úkolů – osobní pošta</h1>
+      <p class="lede">Soukromá pomůcka Jakuba Semeniuka pro zachycení zadání, vlastních příslibů a očekávaných odpovědí z pošty. Pomáhá uchovat úkol, jeho původ a skutečně uvedený termín na jednom místě.</p>
+    </div>
+    <aside class="notice" aria-label="Rozsah použití">
+      <p><strong>Pouze pro osobní potřebu vlastníka.</strong> Tento web obsahuje informace o aplikaci. Registrace ani veřejné přihlášení zde nejsou k dispozici.</p>
+    </aside>
+    <section aria-labelledby="jak-funguje">
+      <h2 id="jak-funguje">Jak aplikace funguje</h2>
+      <ol class="flow">
+        <li>
+          <h3>Přečte novou poštu</h3>
+          <p>Po povolení vlastníkem zpracovává přijaté a odeslané zprávy z jeho Gmailu. Přístup k poště je pouze pro čtení; aplikace zprávy neodesílá, nemaže ani neupravuje.</p>
+        </li>
+        <li>
+          <h3>Rozpozná možné zadání</h3>
+          <p>Model GPT‑6.1 Terra s nastavením medium nejprve posoudí, zda zpráva obsahuje úkol. Navazující GPT‑6.1 Sol s nastavením high připraví strukturované zadání a doloží je citací ze zprávy.</p>
+        </li>
+        <li>
+          <h3>Uloží soukromý záznam</h3>
+          <p>Úkoly se ukládají do soukromé evidence v Tabulkách Google. Vlastník je může ve svém webovém rozhraní upravovat a označit za hotové. Nejasná zadání patří k lidskému ověření.</p>
+        </li>
+        <li>
+          <h3>Zobrazí termíny v kalendáři</h3>
+          <p>Aktivní úkoly s uvedeným termínem se promítají do soukromého Kalendáře Google. Úkol bez termínu sám o sobě nevytváří událost. Kalendář zobrazuje údaje z evidence.</p>
+        </li>
+      </ol>
+    </section>
+    <section aria-labelledby="data-a-kontrola">
+      <h2 id="data-a-kontrola">Data a kontrola zůstávají součástí osobního pracovního postupu</h2>
+      <p>Zprávy a kontext úkolů zpracovává soukromý server a služba OpenAI přes předplatné Codex vlastníka. Evidence ani obsah pošty se na těchto informačních stránkách nezobrazují. Podrobnosti o předávání a uchování dat jsou popsány v zásadách soukromí.</p>
+      <div class="document-links">
+        <section>
+          <h3><a href="privacy.html">Ochrana soukromí</a></h3>
+          <p>Jaké údaje aplikace používá, komu je předává, co uchovává a co znamená odvolání přístupu.</p>
+        </section>
+        <section>
+          <h3><a href="terms.html">Podmínky osobního použití</a></h3>
+          <p>Rozsah aplikace, role lidské kontroly a práce s návrhy vytvořenými umělou inteligencí.</p>
+        </section>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Vlastník aplikace: Jakub Semeniuk</p>
+      <p>Kontakt: <a href="mailto:jakub@semeniuk.cz">jakub@semeniuk.cz</a></p>
+    </div>
+  </footer>
+</body>
+</html>

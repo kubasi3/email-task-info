@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jak osobní aplikace Evidence úkolů zpracovává zprávy, údaje o úkolech a přístup ke službám.">
+  <meta name="theme-color" content="#16634e">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'self'; base-uri 'none'; form-action 'none'">
+  <title>Ochrana soukromí | Evidence úkolů – osobní pošta</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#obsah">Přejít na obsah</a>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="index.html" aria-label="Evidence úkolů – osobní pošta, úvod">
+        <span class="brand-mark" aria-hidden="true">Ú</span>
+        <span><span class="brand-name">Evidence úkolů</span><span class="brand-subtitle">osobní pošta</span></span>
+      </a>
+      <nav aria-label="Hlavní navigace">
+        <a href="index.html">Úvod</a>
+        <a href="privacy.html" aria-current="page">Soukromí</a>
+        <a href="terms.html">Podmínky použití</a>
+      </nav>
+    </div>
+  </header>
+  <main id="obsah" class="wrap" tabindex="-1">
+    <article class="document">
+      <p class="eyebrow">Evidence úkolů – osobní pošta</p>
+      <h1>Ochrana soukromí</h1>
+      <p class="updated">Aktualizováno <time datetime="2026-11-11">11. listopadu 2026</time></p>
+      <p>Aplikaci provozuje <strong>Jakub Semeniuk</strong> výhradně pro svou osobní potřebu. Slouží k nalezení úkolů ve vlastní poště, jejich soukromé evidenci a zobrazení termínů v kalendáři. Není nabízena veřejnosti jako služba pro připojení dalších uživatelů.</p>
+      <section aria-labelledby="udaje">
+        <h2 id="udaje">Jaké údaje se zpracovávají</h2>
+        <ul>
+          <li>Z připojeného Gmailu: předmět, odesílatel, příjemci, datum, identifikátory zprávy a textová nebo HTML podoba jejího těla. Přílohy se v tomto příjmu samostatně nestahují ani neanalyzují.</li>
+          <li>Z evidence úkolů: zadání, osoby související s úkolem, stav, termín, čekání na odpověď, citace a odkaz na zdroj. Pro rozbor nové zprávy se používají také vybrané údaje z existující evidence kvůli souvislostem a možným duplicitám.</li>
+          <li>Pro provoz: identita připojené schránky, oprávnění k přístupu, technické identifikátory, stav zpracování, uložený plán úkolů, potvrzení zápisu a historie změn.</li>
+        </ul>
+        <p>Údaje slouží k osobní správě úkolů. Aplikace je neprodává a nepoužívá je k reklamě ani marketingovým profilům.</p>
+      </section>
+      <section aria-labelledby="zpracovani">
+        <h2 id="zpracovani">Kde a prostřednictvím koho se data zpracovávají</h2>
+        <ul>
+          <li><strong>Soukromý server vlastníka</strong> zajišťuje příjem, pracovní frontu a zpracování zpráv.</li>
+          <li><strong>OpenAI přes předplatné Codex vlastníka</strong> zpracovává text zprávy, potřebné hlavičky a vybrané údaje z evidence. Model GPT‑6.1 Terra (medium) třídí zprávy a GPT‑6.1 Sol (high) rozebírá možné úkoly.</li>
+          <li><strong>Google Gmail, Tabulky Google a Kalendář Google</strong> zajišťují přístup k poště, soukromé uložení evidence a zobrazení termínů.</li>
+        </ul>
+        <p>Zpracování u poskytovatelů se řídí jejich podmínkami a nastavením účtů a předplatného vlastníka. Tato aplikace sama neurčuje pravidla uchování ani případného dalšího zpracování dat u OpenAI nebo Googlu a neslibuje za ně konkrétní nastavení.</p>
+      </section>
+      <section aria-labelledby="uchovani">
+        <h2 id="uchovani">Uchování pracovních dat a úkolů</h2>
+        <p>Vstup zprávy je na soukromém serveru uložen po dobu potřebnou pro třídění a rozbor. Po uložení plánu úkolů nebo vyhodnocení zprávy jako zprávy bez úkolu se původní vstup a průběžný výsledek třídění odstraní z pracovního záznamu.</p>
+        <p><strong>Při chybě nebo zablokování před dokončením rozboru může vstup zůstat uložen</strong> pro kontrolu a opakování zpracování. Odstranění původního vstupu proto není vždy okamžité.</p>
+        <p>Vytvořené úkoly, jejich citace a původ, historie změn, uložené plány a technické stavy zůstávají v soukromém úložišti. Pro tyto záznamy není nastavena obecná automatická lhůta mazání. Původní zprávy v Gmailu tento postup nemaže.</p>
+        <p>Soukromé provozní zálohy mohou uchovávat předchozí stav pracovních dat; jejich odstranění se řeší samostatně.</p>
+      </section>
+      <section aria-labelledby="ovladani">
+        <h2 id="ovladani">Přístup a jeho odvolání</h2>
+        <p>Přístup k Gmailu je pouze pro čtení. Aplikace jeho prostřednictvím poštu neodesílá, nemaže ani neupravuje. Vlastník může přístup odvolat v nastavení účtu Google mezi propojenými aplikacemi a může zastavit automatizaci na svém serveru.</p>
+        <p>Odvolání oprávnění zastaví další povolený přístup do Gmailu. Samo neodstraní již vytvořené úkoly, citace, pracovní záznamy ani kalendářové záznamy. K zastavení dalšího zpracování již přijatých vstupů je nutné zastavit také automatizaci; dříve uložené údaje se řeší samostatně.</p>
+      </section>
+      <section aria-labelledby="verejny-web">
+        <h2 id="verejny-web">Tyto informační stránky</h2>
+        <p>Veřejné stránky neobsahují obsah schránek ani soukromé úkoly. Nemají přihlašovací formulář, analytické nebo reklamní skripty, externě načítaná písma ani sledovací cookies přidané touto aplikací.</p>
+        <p>Hosting GitHub Pages může vést běžné provozní záznamy návštěv podle vlastních pravidel. To je oddělené od zpracování osobní pošty a úkolů.</p>
+      </section>
+      <section aria-labelledby="kontakt">
+        <h2 id="kontakt">Kontakt</h2>
+        <p>Dotazy ke zpracování nebo odstranění konkrétního uchovaného záznamu lze poslat vlastníkovi aplikace: <a href="mailto:jakub@semeniuk.cz">jakub@semeniuk.cz</a>.</p>
+      </section>
+    </article>
+  </main>
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Vlastník aplikace: Jakub Semeniuk</p>
+      <p><a href="index.html">Úvod</a> · <a href="terms.html">Podmínky použití</a></p>
+    </div>
+  </footer>
+</body>
+</html>
